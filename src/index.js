@@ -1,5 +1,5 @@
 import * as AdaptiveCards from "adaptivecards";
-
+require('./mystyles.scss');
 
 var card = {
     "type": "AdaptiveCard",
