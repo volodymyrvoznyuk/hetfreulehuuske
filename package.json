@@ -1,0 +1,39 @@
+{
+  "name": "hetfreulehuuske",
+  "version": "1.0.0",
+   "main": "./src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.cjs --open",
+    "build": "webpack --config webpack.prod.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herbrandhofker/hetfreulehuuske.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/herbrandhofker/hetfreulehuuske/issues"
+  },
+  "homepage": "https://github.com/herbrandhofker/hetfreulehuuske#readme",
+  "dependencies": {
+    "adaptivecards": "^2.1.0"
+  },
+  "devDependencies": {
+    "bulma": "^0.9.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.6.0",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^3.0.7",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
+  }
+}
