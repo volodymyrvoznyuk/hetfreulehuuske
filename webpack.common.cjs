@@ -1,32 +1,48 @@
-const HtmlWebpackPlugin=require("html-webpack-plugin");
-const path = require('path');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     entry: {
-        main : "./src/index.js"
+        main: "./src/index.js"
     },
-    plugins : [
-        new HtmlWebpackPlugin({ 
-            template: './src/index.html'
-          })    ],
+
     module: {
-     rules:[ 
-              
-        {
-            test: /\.html$/,
-            use: [
-                "html-loader"
-            ]
-        },
-        {
-            test: /\.(svg|jpg|jpeg|png|gif|jfif)$/,
-            use: { 
-                loader:  "file-loader", 
-                options: {
-                    name: "[name].[ext]",
-                    outputPath: "images"
+        rules: [
+
+            {
+                test: /\.scss$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'css-loader'
+                    },
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: true,
+                            // options...
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.html$/,
+                use: [
+                    "html-loader"
+                ]
+            },
+            {
+                test: /\.(svg|jpg|jpeg|png|gif|jfif)$/,
+                use: {
+                    loader: "file-loader",
+                    options: {
+                        name: "[name].[ext]",
+                        outputPath: "images"
+                    }
                 }
-             }            
-        }
-     ]
-    }
+            }
+        ]
+    }, plugins: [
+        new HtmlWebpackPlugin({
+            template: './src/index.html'
+        })]
 }
