@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin=require("html-webpack-plugin");
+const path = require('path');
 module.exports = {
     entry: {
         main : "./src/index.js"
@@ -8,7 +9,8 @@ module.exports = {
             template: './src/index.html'
           })    ],
     module: {
-     rules:[      
+     rules:[ 
+              
         {
             test: /\.html$/,
             use: [
