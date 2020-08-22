@@ -10,19 +10,237 @@
       text-align: center;
       height: 3em;
       background-color: yellow;
- 
+
     }
 
     .card-footer {
       text-align: center;
-    
- 
+
+
     }
   </style>
 
 </head>
 
 <body style="margin:50px">
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Home
+        </a>
+
+        <a class="navbar-item">
+          Documentation
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              About
+            </a>
+            <a class="navbar-item">
+              Jobs
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light">
+              Log in
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero is-dark is-fullheight-with-navbar" style="background-image:url('cover.jpeg'); background-size: cover; background-blend-mode: soft-light">
+    
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Fullheight titlexxxxxxxxxxxx
+        </h1>
+        <h2 class="subtitle">
+          Fullheight subtitle
+        </h2>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Section</h1>
+      <h2 class="subtitle">
+        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+      </h2>
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">John Smith</p>
+                  <p class="subtitle is-6">@johnsmith</p>
+                </div>
+              </div>
+          
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                <a href="#">#css</a> <a href="#">#responsive</a>
+                <br>
+                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">John Smith</p>
+                  <p class="subtitle is-6">@johnsmith</p>
+                </div>
+              </div>
+          
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                <a href="#">#css</a> <a href="#">#responsive</a>
+                <br>
+                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">John Smith</p>
+                  <p class="subtitle is-6">@johnsmith</p>
+                </div>
+              </div>
+          
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                <a href="#">#css</a> <a href="#">#responsive</a>
+                <br>
+                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">John Smith</p>
+                  <p class="subtitle is-6">@johnsmith</p>
+                </div>
+              </div>
+          
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                <a href="#">#css</a> <a href="#">#responsive</a>
+                <br>
+                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
   <img src="./assets/main.jpg">
   <div id="root"></div>
   <div class="buttons">
@@ -42,17 +260,17 @@
 
       <div class="card-content">
         Zo zag het eruit toen we het in 1983 kochten.
-       
+
         Onze ouders hadden het al vele jaren te koop zien staan. Onze vader Willem Hofker kende dit pand uit zijn
-          jeugd, hij had, net als vele andere Amelanders, veel in deze tuin gespeeld.<br>
-          Toen onze vader Willem Hofker met pensioen ging, stond het nog steeds te koop. Ondanks het mooie plekje is er
-          geen Amelander
-          die dit pand wil redden. Na gedegen onderzoek,
-          en de actieve steun van Provincie Friesland (behoorlijke subsidie + toegevoegd deskundig architect van Tol)
-          heeft hij zijn schouders eronder gezet.
+        jeugd, hij had, net als vele andere Amelanders, veel in deze tuin gespeeld.<br>
+        Toen onze vader Willem Hofker met pensioen ging, stond het nog steeds te koop. Ondanks het mooie plekje is er
+        geen Amelander
+        die dit pand wil redden. Na gedegen onderzoek,
+        en de actieve steun van Provincie Friesland (behoorlijke subsidie + toegevoegd deskundig architect van Tol)
+        heeft hij zijn schouders eronder gezet.
       </div>
 
-    
+
     </div>
 
     <div class="card column">
@@ -95,7 +313,7 @@
           toch in 1684 ook al extra onderhoud zijn geweest?
         </p>
       </div>
-     
+
     </div>
   </div>
 
@@ -366,14 +584,15 @@
 
   <div class="section-header">
     <h1>Het fotoalbum gemaakt bij de renovatie 1983-1990</h1>
-      <br/>
-      <p>De heer W.K. Hofker heeft een fotoalbum gemaakt met een verslag van zaken zoals hij het
-        <i>Het Freule Huuske</i> in de jaren '80 aantrof en een aantal ervaringen opgedaan tijdens van de restauratie.</p>
-      <br/>
-      <h1>
-      <a href='https://photos.google.com/share/AF1QipPWeiPpoRJ0S0O4-4CJNoxH5FFQbWSjuZHvQ0aVgOPfC9Qw5Oeif01OXKfcddpptQ/photo/AF1QipPfSjx3_YPQpAM-7pANkfClKXrHT6i_cmbE-wM?key=SjNTeVpmd2NRR1pad0dVRTVZb3FIZ2d4WlJLeWx3'  target="_blank">Klik hier voor een diavoorstelling
+    <br />
+    <p>De heer W.K. Hofker heeft een fotoalbum gemaakt met een verslag van zaken zoals hij het
+      <i>Het Freule Huuske</i> in de jaren '80 aantrof en een aantal ervaringen opgedaan tijdens van de restauratie.</p>
+    <br />
+    <h1>
+      <a href='https://photos.google.com/share/AF1QipPWeiPpoRJ0S0O4-4CJNoxH5FFQbWSjuZHvQ0aVgOPfC9Qw5Oeif01OXKfcddpptQ/photo/AF1QipPfSjx3_YPQpAM-7pANkfClKXrHT6i_cmbE-wM?key=SjNTeVpmd2NRR1pad0dVRTVZb3FIZ2d4WlJLeWx3'
+        target="_blank">Klik hier voor een diavoorstelling
       </a>
-      </h1>
+    </h1>
   </div>
 </body>
 
