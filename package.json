@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/herbrandhofker/hetfreulehuuske#readme",
   "dependencies": {
-    "adaptivecards": "^2.1.0",
     "bulma-carousel": "^4.0.4"
   },
   "devDependencies": {

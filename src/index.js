@@ -1,8 +1,6 @@
-import * as AdaptiveCards from "adaptivecards";
 require('./mystyles.scss');
 
 import bulmaCarousel from 'bulma-carousel/dist/js/bulma-carousel.min.js';
-
 
 const el = document.getElementById("carousel");
 for (var i = 21; i < 99; i++) {
