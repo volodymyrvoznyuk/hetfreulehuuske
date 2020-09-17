@@ -21,3 +21,9 @@ bulmaCarousel.attach('#carousel', {
     slidesToScroll: 1,
     slidesToShow: 1
 });
+
+const gemeente=document.getElementById("gemeente");
+gemeente.style="display:none";
+
+if (new URLSearchParams( window.location.search).get('gemeente')!=null)
+    gemeente.style="display:block";
