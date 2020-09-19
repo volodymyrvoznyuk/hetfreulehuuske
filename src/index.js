@@ -12,6 +12,7 @@ for (var i = 21; i < 99; i++) {
     figure.classList.add("is-256x256");
     const img = document.createElement("img");
     img.src = "./images/" + i + ".jpg";
+    img.loading="lazy";
     figure.append(img);
     div.append(figure);
     el.append(div);
