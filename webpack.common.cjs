@@ -1,5 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+
 module.exports = {
     entry: {
         main: "./src/index.js"
@@ -48,5 +50,10 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: 'css/mystyles.css'
+          }),
+          new CopyPlugin({
+            patterns: [
+              { from: './src/assets/carousel',to: './images'},
+             ],
           })]
 }
