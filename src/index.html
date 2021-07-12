@@ -8,13 +8,49 @@
       background-color: lightgrey;
     }
 
+    /* Declare text styles */
+    h1,
+    h2,
+    p {
+      /* Font minimum, preferred and maximum value */
+      font-size: clamp(var(--min), var(--val), var(--max));
+    }
+
+    /* Font size variables */
+    h1 {
+      --min: 2em;
+      /* minimum value */
+      --val: 5vw;
+      /* preferred value = 5% viewport width */
+      --max: 3em;
+      /* maximum value */
+    }
+
+    h2 {
+      --min: 1.5em;
+      /* minimum value */
+      --val: 4vw;
+      /* preferred value = 4% viewport width */
+      --max: 2.25em;
+      /* maximum value */
+    }
+
+    p {
+      --min: 1em;
+      /* minimum value */
+      --val: 2.5vw;
+      /* preferred value = 2.5% viewport width */
+      --max: 1.5em;
+      /* maximum value */
+    }
+
     .card-header-title {
       background-color: #8BB381;
-      height: 5em;
+      
     }
 
     .card-content {
-      height: 18em;
+      
     }
 
     .card-footer {
@@ -33,7 +69,7 @@
   </style>
 </head>
 
-<body style="margin:50px">
+<body>
   <div id="gemeente">
 
     <section class="hero is-dark is-fullheight-with-navbar background">
@@ -502,7 +538,7 @@
           <h1 class="title is-size-1">
             Stichting Het Freule Huuske
           </h1>
-          <h2 class="subtitle is-size-1">
+          <h2>
             Voor ondersteuning Rijksmonumenten op Ameland
           </h2>
         </div>
@@ -1100,7 +1136,7 @@
 
   </div>
   <footer id="footer" class="footer">
-    <div class="content has-text-centered is-size-1 ">
+    <div class="content has-text-centered is-size-4">
       <strong>Stichting Het Freule Huuske</strong>
       <br>Vermaningspad 6, Nes, Ameland
       <br>Email: hetfreulehuuske@gmail.com
